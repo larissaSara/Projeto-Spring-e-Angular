@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: restful-api
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: larissa
+Implementation-Vendor-Id: com.restful-api
+Build-Jdk: 1.8.0_74
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/restful-api
+Created-By: Maven Integration for Eclipse
+
