@@ -18,7 +18,7 @@ public class Pessoa {
 	private Long codigo;
 	
 	@NotNull
-	@Size(min=5,max=50)
+	@Size(min=2,max=50)
 	private String nome;
 	
 	@NotNull
