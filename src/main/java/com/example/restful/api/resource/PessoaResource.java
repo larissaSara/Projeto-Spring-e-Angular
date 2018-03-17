@@ -1,17 +1,5 @@
 package com.example.restful.api.resource;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-=======
-import java.net.URI;
->>>>>>> aab853ba544fa397384a2e3187e1cb0c082b3a65
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
@@ -30,11 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-<<<<<<< HEAD
-=======
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
->>>>>>> 94ffaf112a7326976e74b655ea9f34c45eb7e500
->>>>>>> aab853ba544fa397384a2e3187e1cb0c082b3a65
 
 import com.example.restful.api.event.RecursoCriadoEvent;
 import com.example.restful.api.model.Pessoa;
@@ -58,8 +41,6 @@ public class PessoaResource {
 		return pessoaRepository.findAll();
 	}
 	
-<<<<<<< HEAD
-=======
 	@PostMapping
 	public ResponseEntity<Pessoa> criar(@Valid @RequestBody Pessoa pessoa, HttpServletResponse response){
 		Pessoa pessoaSalva = pessoaRepository.save(pessoa);
@@ -75,7 +56,7 @@ public class PessoaResource {
 		return pessoa!=null ? ResponseEntity.ok(pessoa) : ResponseEntity.notFound().build();
 	}
 	
-<<<<<<< HEAD
+
 	@DeleteMapping("/{codigo}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void remover(@PathVariable Long codigo) {
@@ -96,7 +77,4 @@ public class PessoaResource {
 		pessoaService.atualizarPropriedadeAtivo(codigo, ativo);
 	}
 	
-=======
->>>>>>> 94ffaf112a7326976e74b655ea9f34c45eb7e500
->>>>>>> aab853ba544fa397384a2e3187e1cb0c082b3a65
 }
